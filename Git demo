@@ -29,3 +29,37 @@ git commit -m "creating test file"
 git log
 
 
+
+
+//For Jenkins
+sudo apt update
+
+sudo apt install openjdk-8-jdk //To install java
+
+//To install jenkins
+#Jenkins
+$ wget -q -O - https://pkg.jenkins.io/debian-stable/... | sudo apt-key add -
+$ sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+
+$ sudo apt-get update
+$ sudo apt-get install jenkins
+$ sudo systemctl start jenkins
+$ sudo systemctl enable jenkins
+$ sudo systemctl status jenkins
+
+#update firewall rules if required
+$ sudo ufw allow 8080
+$ sudo ufw status
+
+#Access Jenkins in Browser
+$ http://your_server_ip_or_domain:8080 
+# if install on local machine
+$ http://localhost:8080
+
+#get Jenkins Administrator password using this command
+$ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+ 
+
+
+
+
