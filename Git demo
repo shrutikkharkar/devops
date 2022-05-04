@@ -1,1 +1,31 @@
-how to version control with 
+apt-get install git
+or
+add-apt-repository ppa:git-core/ppa 
+or
+apt update; apt install git
+
+git --version
+
+git --help
+
+git config --global user.name "shrutikkharkar"
+
+git config --global user.email "shrutikharkar3@gmail.com"
+
+git config --global core.editor "notepad"
+
+mkdir devops
+
+cd devops
+
+git init
+
+touch test.txt
+
+git add test.txt
+
+git commit -m "creating test file"
+
+git log
+
+
