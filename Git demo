@@ -60,6 +60,8 @@ $ http://localhost:8080
 $ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
  
 
+https://phoenixnap.com/kb/install-puppet-ubuntu
 
+https://phoenixnap.com/kb/install-ansible-ubuntu-20-04
 
 
